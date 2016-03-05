@@ -50,7 +50,7 @@ if (hasUserMedia()) {
     ctx.drawImage(video, 0, 0, 320, 240)
       // console.log(canvas.toDataURL("image/jpeg"))
     socket.emit('frame', canvas.toDataURL("image/jpeg"));
-  }, 150)
+  }, 500)
 
 
 } else {
