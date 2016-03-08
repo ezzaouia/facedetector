@@ -123,7 +123,7 @@ class FaceDetector(object):
                  min_size_scalar=0.25, max_size_scalar=0.75):
         
         module_path = os.path.split(os.path.dirname(os.path.realpath('__file__')))[0]
-        classifier_path = os.path.join(module_path, 'facedetector/static/resources',
+        classifier_path = os.path.join(module_path, 'webrtc-emotion-recognition/static/resources',
                                        'haarcascade_frontalface_default.xml') 
         self.detector = cv2.CascadeClassifier(classifier_path)
         if self.detector.empty():

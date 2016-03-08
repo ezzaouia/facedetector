@@ -46,6 +46,8 @@ def handle_frame(frame):
   if not isinstance(frame, basestring):
     return
   
+  image_ref = 'null'
+  
   try:
     image_ref = frame.split(',')[1]
   except IndexError:

@@ -4,7 +4,7 @@ let video = document.querySelector('video')
 let canvas = document.querySelector('canvas')
 let ctx = canvas.getContext('2d')
 let timer
-let socket = io.connect("http://localhost:5000")
+let socket = io.connect(null, {port: 5000, rememberTransport: false});
 let img = new Image()
 
 // show loading notice

@@ -17,7 +17,7 @@ class EmotionFeatures(object):
     def __init__(self, Xtr=None):
         self.X = Xtr
         module_path = os.path.split(os.path.dirname(os.path.realpath('__file__')))[0]
-        predictor_path = os.path.join(module_path, 'facedetector/static/resources',
+        predictor_path = os.path.join(module_path, 'webrtc-emotion-recognition/static/resources',
                                        'shape_predictor_68_face_landmarks.dat') 
         self.detector = dlib.get_frontal_face_detector()
         self.predictor = dlib.shape_predictor(predictor_path)
